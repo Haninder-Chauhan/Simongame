@@ -17,7 +17,7 @@ $(document).keypress(function () {
     }
 })
 
-$(document).click(function () {
+$("#start").click(function () {
 
     if (!started) {
         $("#level-title").text("level " + level);
@@ -75,12 +75,12 @@ function checkAnswer(currentLevel) {
         if (userClickedPattern.length === gamePattern.length) {
             setTimeout(function () {
                 nextSequence();
-            }, 1000);
+            }, 500);
         }
     } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key or Click to Restart");
+        $("#level-title").text("Game Over, Press Any Key or Click START to Restart." + "Your score was " + level + ".");
 
         setTimeout(function () {
             $("body").removeClass("game-over");
