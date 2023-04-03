@@ -57,8 +57,14 @@ button {
   margin-top: 80px;
 }
 
+#start{
+  height: 50px;
+  width: 100px;
+  border-radius: 15%;
+  border: 5px solid grey;
+}
 
-@media (min-width: 450px) {
+@media (min-width: 350px) {
 
   #level-title {
     font-size: 1rem;
@@ -73,7 +79,7 @@ button {
   }
 
   body {
-    margin-top: 150px;
+    margin-top: 140px;
   }
 
   .btn {
