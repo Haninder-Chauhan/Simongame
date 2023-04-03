@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
@@ -52,60 +52,90 @@ body {
   background-color: grey;
 }
 
+button {
+  background-color: #FEF2BF;
+  margin-top: 80px;
+}
 
-@media (min-width: 450px){
-  
-  #level-title{
+
+@media (min-width: 450px) {
+
+  #level-title {
     font-size: 1rem;
   }
-  .row{
+
+  .row {
     display: inline-flex;
   }
 
-  .btn{
+  .container {
+    width: auto;
+  }
+
+  body {
+    margin-top: 140px;
+  }
+
+  .btn {
     margin: 25px;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  border: 5px solid black;
-  border-radius: 20%;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border: 5px solid black;
+    border-radius: 20%;
   }
 }
 
-@media (min-width: 750px){
-  
-  #level-title{
+@media (min-width: 750px) {
+
+  #level-title {
     font-size: 2rem;
   }
-  .row{
+
+  .row {
     display: inline-flex;
   }
 
-  .btn{
+  .container {
+    width: 50%;
+  }
+
+  body {
+    margin-top: 0;
+  }
+
+  .btn {
     margin: 25px;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  border: 8px solid black;
-  border-radius: 20%;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 8px solid black;
+    border-radius: 20%;
   }
 }
 
-@media (min-width: 1200px){
-  
-  #level-title{
+@media (min-width: 1200px) {
+
+  #level-title {
     font-size: 3rem;
   }
-  .row{
+
+  .row {
     display: inline-flex;
   }
 
-  .btn{
+  .container {
+    width: 50%;
+  }
+  body {
+    margin-top: 0;
+  }
+  .btn {
     margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
   }
 }
