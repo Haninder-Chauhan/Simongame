@@ -17,6 +17,15 @@ $(document).keypress(function () {
     }
 })
 
+$(document).click(function () {
+
+    if (!started) {
+        $("#level-title").text("level " + level);
+        nextSequence();
+        started = true
+    }
+})
+
 // User click on button for output
 $(".btn").click(function () {
 
@@ -71,7 +80,7 @@ function checkAnswer(currentLevel) {
     } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Any Key or Click to Restart");
 
         setTimeout(function () {
             $("body").removeClass("game-over");
